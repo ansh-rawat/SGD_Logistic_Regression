@@ -22,14 +22,19 @@ Logistic Regression algorithm workflow:
 Some of the important mathematical equations used by logistic regression are mentioned below: 
 
 Log loss function (a.k.a. Cost Function used in Logistic Regression)
+
 𝑙𝑜𝑔𝑙𝑜𝑠𝑠=−1∗1/𝑛 Σ(𝑓𝑜𝑟 𝑒𝑎𝑐ℎ 𝑌𝑡,𝑌𝑝𝑟𝑒𝑑) (𝑌𝑡 * 𝑙𝑜𝑔10(𝑌𝑝𝑟𝑒𝑑) + (1−𝑌𝑡) * 𝑙𝑜𝑔10(1−𝑌𝑝𝑟𝑒𝑑)) 
 
 Derivative of weights and biases 
+
 𝑑𝑤 = 𝑥 * (𝑦 − σ(𝑤.𝑇 * 𝑥 + 𝑏) − λ/𝑁 * 𝑤) 
+
 𝑑𝑏 = 𝑦 − σ((𝑤.𝑇 * 𝑥 + 𝑏)) 
 
 Updatating weights and biases
+
 𝑤(𝑡+1)←𝑤(𝑡)+α(𝑑𝑤(𝑡)) 
+
 𝑏(𝑡+1)←𝑏(𝑡)+α(𝑑𝑏(𝑡)) 
 
 To better understand above equations please go though this link: https://drive.google.com/file/d/1nQ08-XY4zvOLzRX-lGf8EYB5arb7-m1H/view
